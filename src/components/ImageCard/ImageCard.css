@@ -1,0 +1,126 @@
+/*-----------------------------    
+COMPONENTE: ImageCard
+------------------------------*/
+
+.image-card {
+    position: relative;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow);
+    background-color: var(--gray-color);
+}
+
+.image-card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+}
+
+.image-card__link {
+    display: block;
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.image-card__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    max-height: 380px;
+    object-fit: cover;
+}
+
+.image-card__overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-card:hover .image-card__overlay {
+    opacity: 1;
+}
+
+/* Botón de Visitar*/
+.image-card__visit{
+    background-color: var(--red-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: var(--transition);
+}
+.image-card__visit:hover{
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+.image-card__likes {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--secondary-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.image-card__author {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    max-width: calc(100% - 50px);
+}
+
+.image-card__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 12px 12px;
+  text-align: center;
+}
+
+.image-card__author-link {
+  display: block;
+  margin-top: -24px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.image-card__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--secondary-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.image-card__author-name {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}

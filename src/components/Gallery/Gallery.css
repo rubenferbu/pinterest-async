@@ -1,0 +1,51 @@
+/* -----------------------------------------
+   RESPONSIVE — columnas según breakpoint
+   ----------------------------------------- */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 24px 0;
+  align-items: start;
+}
+.gallery {
+  column-count: 1;
+  column-gap: 16px;
+  padding: 24px 0;
+}
+
+.gallery__empty {
+  text-align: center;
+  padding: 48px 0;
+  color: var(--gray-dark);
+  font-size: 16px;
+}
+
+/* Móvil: 320px — 1 columna */
+@media (max-width: 767px) { 
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet: 768px — 2 columnas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop: 1024px — 4 columnas */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Pantallas grandes: 1440px — 5 columnas */
+@media (min-width: 1440px) {
+  .gallery {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
