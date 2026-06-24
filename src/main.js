@@ -2,10 +2,10 @@
 // MAIN: Punto de entrada de la aplicación
 //------------------------------------------
 
-import {createHeader} from './components/header/header.js';
-import {createGallery} from './components/gallery/gallery.js';
-import {createLoader} from './components/loader/loader.js';
-import {createFooter} from './components/footer/footer.js';
+import { createHeader } from './components/Header/Header.js';
+import { createGallery } from './components/Gallery/Gallery.js';
+import { createLoader } from './components/Loader/Loader.js';
+import { createFooter } from './components/Footer/Footer.js';
 import {
     subscribe,
     loadInitialImages,
@@ -14,14 +14,13 @@ import {
 } from './hooks/useUnsplash.js';
 
 // Importación de archivos CSS de cada componente
-
 import './styles/global.css';
-import './components/header/header.css'
-import './components/searchBar/searchBar.css';
-import './components/gallery/gallery.js';
-import './components/imageCard/imageCard.js';
-import './components/loader/loader.js';
-import './components/footer/footer.js';
+import './components/Header/Header.css';
+import './components/SearchBar/SearchBar.css';
+import './components/Gallery/Gallery.css';
+import './components/ImageCard/ImageCard.css';
+import './components/Loader/Loader.css';
+import './components/Footer/Footer.css';
 
 const app = document.getElementById('app');
 
