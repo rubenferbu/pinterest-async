@@ -36,6 +36,8 @@ El proyecto implementa una **arquitectura basada en componentes** en Vanilla JS,
 
 ```
 pinterest-async/
+├──public/
+│  └── og-image.png 
 ├── src/
 │   ├── assets/
 │   │   ├── docs/           # Capturas de pantalla
