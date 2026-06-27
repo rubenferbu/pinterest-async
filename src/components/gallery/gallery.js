@@ -2,7 +2,7 @@
 // COMPONENTE: Gallery (galería de imágenes)
 // -----------------------------------------
 
-import { createImageCard } from "../ImageCard/imageCard.js";
+import { createImageCard } from "../imageCard/imageCard.js";
 
 /**
  * Crea la galería completa a partir de un array de imágenes
