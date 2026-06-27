@@ -37,6 +37,9 @@ El proyecto implementa una **arquitectura basada en componentes** en Vanilla JS,
 ```
 pinterest-async/
 ├── src/
+│   ├── assets/
+│   │   ├── docs/           # Capturas de pantalla
+│   │   └── icons/          # SVG icons
 │   ├── components/         # Componentes de UI (cada uno con su JS y CSS)
 │   │   ├── footer/
 │   │   ├── gallery/
@@ -53,7 +56,6 @@ pinterest-async/
 │   ├── utils/
 │   │   └── loadIcon.js     # Carga de SVGs inline con Vite ?raw
 │   └── main.js             # Punto de entrada y renderizado
-├── docs/                   # Capturas de pantalla
 ├── .env.example            # Plantilla de variables de entorno
 ├── netlify.toml            # Configuración de despliegue
 └── vite.config.js          # Configuración de Vite
