@@ -4,7 +4,7 @@
 
 Réplica funcional de Pinterest construida desde cero con **Vite** y **Vanilla JavaScript puro**, sin frameworks ni librerías de UI. Consume la API oficial de **Unsplash** para mostrar imágenes reales en un layout masonry responsive.
 
-🌐 **[Ver demo en vivo](https://pinteres-async.netlify.app/)** · 📂 **[Repositorio](https://github.com/rubenferbu/pinterest-async)**
+🌐 **[Ver demo en vivo](https://pinteres-async.netlify.app/)**
 
 ---
 
