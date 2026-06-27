@@ -26,3 +26,37 @@
 .footer__link:hover {
   color: var(--red-color);
 }
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.footer__github {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  transition: var(--transition);
+  color: var(--gray-dark);
+  flex-shrink: 0;
+}
+
+.footer__github svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--gray-dark);
+  transition: var(--transition);
+}
+
+.footer__github:hover {
+  background-color: var(--gray-color);
+}
+
+.footer__github:hover svg {
+  stroke: var(--primary-color);
+}
