@@ -2,7 +2,7 @@
 // COMPONENTE: Header (Cabecera de la app)
 //-----------------------------------------
 
-import { createSearchBar } from "../SearchBar/searchBar.js";
+import { createSearchBar } from "../searchBar/searchBar.js";
 import { loadIcon } from "../../utils/loadIcon.js";
 
 export function createHeader({ onSearch, onReset }) {
